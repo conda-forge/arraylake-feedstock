@@ -44,8 +44,8 @@ requirements:
     - zarr >=2.14,<=2.16
     - __unix  # [unix]
     - __win   # [win]
-    # - cachetools
-    # - typing-extensions
+    - cachetools
+    - typing-extensions
   run_constrained:
     - cffgrib >=0.9.10.4,<1
     - eccodes >=1.6.1,<2
