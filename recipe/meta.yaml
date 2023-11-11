@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - arraylake = arraylake.cli.main:app
     - al = arraylake.cli.main:app
@@ -48,7 +48,7 @@ requirements:
     - typing-extensions
   run_constrained:
     - cffgrib >=0.9.10.4,<1
-    - eccodes >=1.6.1,<2
+    # - eccodes >=1.6.1,<2
     - fsspec >=2022.11.0
     - h5py >=3.7.0,<4.0.0
     - ipytree >=0.2.2,<1.0
