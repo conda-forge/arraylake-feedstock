@@ -47,7 +47,7 @@ requirements:
     - cachetools
     - typing-extensions
   run_constrained:
-    - cffgrib >=0.9.10.4,<1
+    - cffgrib >=0.9,<1
     - python-eccodes >=1.6.1,<2
     - fsspec >=2022.11.0
     - h5py >=3.7.0,<4.0.0
