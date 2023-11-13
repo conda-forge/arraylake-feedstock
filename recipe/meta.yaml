@@ -1,5 +1,5 @@
 {% set name = "arraylake" %}
-{% set version = "0.7.3" %}
+{% set version = "0.7.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/arraylake-{{ version }}.tar.gz
-  sha256: 1f79db284cd72da7220591365536071c3feb804e54c6bf43046a508534d21148
+  sha256: 3b96bd76ead55f1c60166e758007950dace66df111bc48965e65b0b6e6e7ff9a
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
   entry_points:
     - arraylake = arraylake.cli.main:app
     - al = arraylake.cli.main:app
@@ -47,8 +47,8 @@ requirements:
     - cachetools
     - typing-extensions
   run_constrained:
-    - cffgrib >=0.9.10.4,<1
-    # - eccodes >=1.6.1,<2
+    - cffgrib >=0.9,<1
+    - python-eccodes >=1.6.1,<2
     - fsspec >=2022.11.0
     - h5py >=3.7.0,<4.0.0
     - ipytree >=0.2.2,<1.0
