@@ -1,5 +1,5 @@
 {% set name = "arraylake" %}
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/arraylake-{{ version }}.tar.gz
-  sha256: 8a5fc1e29fbcb61c2ecf1e306daa7e8157df56b9a5b8e183424bf7c4335c236a
+  sha256: 01c775b38bcd8529baf5140ce396c47697932ad673e8cd99a56d79a10c228fc2
 
 build:
   noarch: python
@@ -27,6 +27,7 @@ requirements:
     - python >=3.8,<3.12
     - aiobotocore >=2.4,<3
     - aioitertools >=0.11,<1
+    - boto3 >=1.24
     - botocore >=1.31,<2
     - click >=8.1,<9
     - donfig >=0.7,<1.0
