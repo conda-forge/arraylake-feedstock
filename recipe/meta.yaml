@@ -27,6 +27,7 @@ requirements:
     - python >=3.8,<3.12
     - aiobotocore >=2.4,<3
     - aioitertools >=0.11,<1
+    - boto3 >=1.24
     - botocore >=1.31,<2
     - click >=8.1,<9
     - donfig >=0.7,<1.0
