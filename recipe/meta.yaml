@@ -1,5 +1,5 @@
 {% set name = "arraylake" %}
-{% set version = "0.8.1" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/arraylake-{{ version }}.tar.gz
-  sha256: 01c775b38bcd8529baf5140ce396c47697932ad673e8cd99a56d79a10c228fc2
+  sha256: b01b24e6ae8b02869f8e00a42a9c73932e4a8473bc255c3134e84080289fc6aa
 
 build:
   noarch: python
@@ -48,6 +48,8 @@ requirements:
     - cachetools >=5.3
     - types-cachetools >=5.3
     - typing-extensions
+    - fsspec >=2022.11.0
+    - gcsfs >=2022.11
   run_constrained:
     - cfgrib >=0.9,<1
     - python-eccodes >=1.6.1,<2
