@@ -48,6 +48,8 @@ requirements:
     - cachetools >=5.3
     - types-cachetools >=5.3
     - typing-extensions
+    - fsspec >=2022.11.0
+    - gcsfs >=2022.11
   run_constrained:
     - cfgrib >=0.9,<1
     - python-eccodes >=1.6.1,<2
