@@ -1,5 +1,5 @@
 {% set name = "arraylake" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/arraylake-{{ version }}.tar.gz
-  sha256: b01b24e6ae8b02869f8e00a42a9c73932e4a8473bc255c3134e84080289fc6aa
+  sha256: 565bec20bedb51a71210193cba8db679e05a0feb575d525e37e99317e666896f
 
 build:
   noarch: python
@@ -48,8 +48,8 @@ requirements:
     - cachetools >=5.3
     - types-cachetools >=5.3
     - typing-extensions
-    - fsspec >=2022.11.0
-    - gcsfs >=2022.11
+    - fsspec >=2023.01.0
+    - gcsfs >=2023.01
   run_constrained:
     - cfgrib >=0.9,<1
     - python-eccodes >=1.6.1,<2
@@ -57,7 +57,7 @@ requirements:
     - h5py >=3.7.0,<4.0.0
     - ipytree >=0.2.2,<1.0
     - kerchunk >=0.1,<1.0,!=0.2.1
-    - s3fs >=2022.11.0
+    - s3fs >=2023.01.0
     - tifffile >=2023.2.27
     - uvloop >=0.17,<1.0
     - xarray >=v2022.12.0
