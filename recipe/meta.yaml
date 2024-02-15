@@ -48,8 +48,8 @@ requirements:
     - cachetools >=5.3
     - types-cachetools >=5.3
     - typing-extensions
-    - fsspec >=2022.11.0
-    - gcsfs >=2022.11
+    - fsspec >=2023.01.0
+    - gcsfs >=2023.01
   run_constrained:
     - cfgrib >=0.9,<1
     - python-eccodes >=1.6.1,<2
@@ -57,7 +57,7 @@ requirements:
     - h5py >=3.7.0,<4.0.0
     - ipytree >=0.2.2,<1.0
     - kerchunk >=0.1,<1.0,!=0.2.1
-    - s3fs >=2022.11.0
+    - s3fs >=2023.01.0
     - tifffile >=2023.2.27
     - uvloop >=0.17,<1.0
     - xarray >=v2022.12.0
