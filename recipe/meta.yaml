@@ -46,7 +46,6 @@ requirements:
     - __unix  # [unix]
     - __win   # [win]
     - cachetools >=5.3
-    - types-cachetools >=5.3
     - typing-extensions
     - fsspec >=2023.01.0
     - gcsfs >=2023.01
