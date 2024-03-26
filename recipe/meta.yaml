@@ -19,12 +19,12 @@ build:
 
 requirements:
   host:
-    - python >=3.9,<3.12
+    - python >=3.9,<3.13
     - poetry-core >=1.0.0
     - poetry-dynamic-versioning
     - pip
   run:
-    - python >=3.8,<3.12
+    - python >=3.8,<3.13
     - aiobotocore >=2.4,<3
     - aioitertools >=0.11,<1
     - boto3 >=1.24
@@ -40,9 +40,10 @@ requirements:
     - rich >=12.6,<14.0
     - ruamel.yaml >=0.17,<1.0
     - structlog >=23.1,<24
-    - typer >=0.6,<1.0
+    - typer >=0.6.1,<1.0
     - uvloop >=0.17,<1  # [unix]
-    - zarr >=2.14,<=2.16
+    - zarr >=2.14,<=2.18
+    - numcodecs !=-0.12.0
     - __unix  # [unix]
     - __win   # [win]
     - cachetools >=5.3
