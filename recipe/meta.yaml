@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - arraylake = arraylake.cli.main:app
     - al = arraylake.cli.main:app
@@ -42,7 +42,7 @@ requirements:
     - structlog >=24.1,<25
     - typer >=0.6.1,<1.0
     - uvloop >=0.17,<1  # [unix]
-    - zarr >=2.14,<=2.18
+    - zarr >=2.14,<3
     - numcodecs !=0.12.0
     - __unix  # [unix]
     - __win   # [win]

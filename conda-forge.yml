@@ -1,9 +1,11 @@
-github:
-  branch_name: main
-  tooling_branch_name: main
+bot:
+  inspection: update-grayskull
 conda_build:
   error_overlinking: true
 conda_forge_output_validation: true
+github:
+  branch_name: main
+  tooling_branch_name: main
 noarch_platforms:
   - linux_64
   - win_64
