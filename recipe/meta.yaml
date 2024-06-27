@@ -1,5 +1,5 @@
 {% set name = "arraylake" %}
-{% set version = "0.9.8" %}
+{% set version = "0.9.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/arraylake-{{ version }}.tar.gz
-  sha256: fc47ccb924f0e4c8b74a68a77b018aa182c2457170bd71db3f5c7a43b7f4f162
+  sha256: f695b1c2e9e2faec887d0129b183f05d8a55a6ed4032690b489986132cdb1587
 
 build:
   noarch: python
