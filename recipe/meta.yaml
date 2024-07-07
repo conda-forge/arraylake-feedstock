@@ -1,5 +1,5 @@
 {% set name = "arraylake" %}
-{% set version = "0.9.9" %}
+{% set version = "0.9.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/arraylake-{{ version }}.tar.gz
-  sha256: f695b1c2e9e2faec887d0129b183f05d8a55a6ed4032690b489986132cdb1587
+  sha256: 67ec251b7f61d8979132d71121ac7a92edf05f000a68d9f58663681635baee34
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
   entry_points:
     - arraylake = arraylake.cli.main:app
     - al = arraylake.cli.main:app
@@ -24,36 +24,37 @@ requirements:
     - poetry-dynamic-versioning
     - pip
   run:
+    - ruamel_yaml >=0.17,<1.0
     - python >=3.10,<3.13
-    - aiobotocore >=2.4,<3
-    - aioitertools >=0.11,<1
-    - boto3 >=1.24
-    - botocore >=1.31,<2
-    - click >=8.1,<9
+    - aiobotocore >=2.4.0,<3.0.0
+    - aioitertools >=0.11.0,<0.12.0
+    - boto3 >=1.24.0,<2.0.0
+    - botocore >=1.27.0,<2.0.0
+    - click >=8.1.0,<9.0.0
     - donfig >=0.7,<1.0
     - email_validator >=2,<3
-    - httpx >=0.23,<1.0
-    - numpy >=1.23,<2
-    - pydantic >=2.3,<3
-    - python-dateutil >=2,<3
+    - httpx >=0.23.0,<1.0
+    - numpy >=1.23.0,<2.0.0
+    - pydantic >=2.3.0,<3.0.0
+    - python-dateutil >=2.8.0,<3.0.0
     - pyyaml >=6,<7.0
     - rich >=12.6,<14.0
     - ruamel.yaml >=0.17,<1.0
-    - structlog >=24.1,<25
+    - structlog >=24.1.0,<25.0.0
     - typer >=0.6.1,<1.0
-    - uvloop >=0.17,<1  # [unix]
-    - zarr >=2.14,<3
+    - uvloop <1.0,>=0.17 # [unix]
+    - zarr >=2.14,<3.0
     - numcodecs !=0.12.0
     - __unix  # [unix]
     - __win   # [win]
-    - cachetools >=5.3
+    - cachetools >=5.3.2,<6.0.0
     - typing-extensions
     - fsspec >=2023.01.0
     - s3fs >=2023.01.0
     - gcsfs >=2023.01
-    - sqlitedict >=2.1.0,<3
-    - tenacity >=8.4.1,<9
-    - humanize >=4.9.0,<5
+    - sqlitedict >=2.1.0,<3.0.0
+    - tenacity >=8.4.1,<9.0.0
+    - humanize >=4.9.0,<5.0.0
   run_constrained:
     - cfgrib >=0.9,<1
     - python-eccodes >=1.6.1,<2
