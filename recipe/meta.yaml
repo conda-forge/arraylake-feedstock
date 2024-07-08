@@ -24,7 +24,7 @@ requirements:
     - poetry-dynamic-versioning
     - pip
   run:
-    - ruamel_yaml >=0.17,<1.0
+    - ruamel_yaml
     - python >=3.10,<3.13
     - aiobotocore >=2.4.0,<3.0.0
     - aioitertools >=0.11.0,<0.12.0
