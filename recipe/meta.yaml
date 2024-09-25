@@ -1,5 +1,5 @@
 {% set name = "arraylake" %}
-{% set version = "0.11.0" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/arraylake-{{ version }}.tar.gz
-  sha256: 7625e6b660e33f5e5f694321c1128e1da01809723fae65298beb0a4ba6db7e4f
+  sha256: ad6a846f9358b1e0e15daa389fda2fb0abb5da536640034a79da9f5d4da6bcb5
 
 build:
   noarch: python
@@ -24,6 +24,7 @@ requirements:
     - poetry-dynamic-versioning
     - pip
   run:
+    - ruamel_yaml >=0.17,<1.0
     - ruamel.yaml >=0.17,<1.0
     - python >=3.10,<3.13
     - aiobotocore >=2.4.0,<3.0.0
