@@ -44,7 +44,7 @@ requirements:
     - structlog >=24.1,<25.dev0
     - typer >=0.6.1,<1.0
     - uvloop <1.0,>=0.17  # [unix]
-    - zarr >=2.18
+    - zarr >=2.18,<3.0
     - numcodecs >=0.13.1
     - __unix  # [unix]
     - __win   # [win]
@@ -58,7 +58,7 @@ requirements:
     - humanize >=4.9.0,<4.10.dev0
   run_constrained:
     - cfgrib >=0.9,<1
-    - python-eccodes >=1.6.1,<2
+    - python-eccodes >=2.39.0
     - h5py >=3.7.0,<4.0.0
     - ipytree >=0.2.2,<1.0
     - kerchunk >=0.1,<1.0,!=0.2.1
