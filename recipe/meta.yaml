@@ -10,6 +10,10 @@ source:
   sha256: bb67bd1d8e2a431cd8ef70816201c940d546ad229821cc8fffae5f3a7d2c1566
 
 build:
+  # https://hatch.pypa.io/1.12/config/build/#environment-variables
+  # disable hatch-min-requirements, it is not available on conda-forge yet
+  script_env:
+    - HATCH_BUILD_HOOK_ENABLE_MIN_REQUIREMENTS=false
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
