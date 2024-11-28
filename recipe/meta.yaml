@@ -22,7 +22,7 @@ requirements:
     - python >=3.10,<3.13
     - hatchling
     - hatch-vcs
-    # - hatch-min-requirements
+    - hatch-min-requirements
     - pip
   run:
     - packaging >=23.0
