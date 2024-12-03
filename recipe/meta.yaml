@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - arraylake = arraylake.cli.main:app
     - al = arraylake.cli.main:app
@@ -61,7 +61,7 @@ requirements:
     - pyopenssl >=23.2.0
   run_constrained:
     - cfgrib >=0.9,<1
-    - python-eccodes >=2.39.0
+    - python-eccodes >=2.37.0
     - h5py >=3.7.0,<4.0.0
     - ipytree >=0.2.2,<1.0
     - kerchunk >=0.1,<1.0,!=0.2.1
