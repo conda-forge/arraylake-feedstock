@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
   entry_points:
     - arraylake = arraylake.cli.main:app
     - al = arraylake.cli.main:app
@@ -90,3 +90,4 @@ extra:
     - jhamman
     - dcherian
     - monodeldiablo
+    - lindseynield
