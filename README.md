@@ -145,6 +145,7 @@ Feedstock Maintainers
 
 * [@dcherian](https://github.com/dcherian/)
 * [@jhamman](https://github.com/jhamman/)
+* [@lindseynield](https://github.com/lindseynield/)
 * [@monodeldiablo](https://github.com/monodeldiablo/)
 * [@rabernat](https://github.com/rabernat/)
 
