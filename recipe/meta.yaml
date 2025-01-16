@@ -1,5 +1,5 @@
 {% set name = "arraylake" %}
-{% set version = "0.13.2" %}
+{% set version = "0.13.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/arraylake-{{ version }}.tar.gz
-  sha256: d3a19330b8e37b843cc3b36dd7bcd868977b8fe49264a0bd3bd67a0c0ce2cd04
+  sha256: ea3bd78b283c090795f968f0dc2d4b5349db3289ee28b5a514b6223450609f96
 
 build:
   noarch: python
@@ -45,7 +45,7 @@ requirements:
     - structlog >=24.1,<25.dev0
     - typer >=0.6.1,<1.0
     - uvloop <1.0,>=0.17  # [unix]
-    - zarr >=2.18,<3.0
+    - zarr >=2.18
     - numcodecs >=0.13.1
     - __unix  # [unix]
     - __win   # [win]
