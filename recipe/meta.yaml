@@ -1,5 +1,5 @@
 {% set name = "arraylake" %}
-{% set version = "0.13.3" %}
+{% set version = "0.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/arraylake-{{ version }}.tar.gz
-  sha256: ea3bd78b283c090795f968f0dc2d4b5349db3289ee28b5a514b6223450609f96
+  sha256: dc0da0835703150bbd674e5d9c09aca09e74e79b59489eafaa1c8f23fe2e082d
 
 build:
   noarch: python
@@ -36,7 +36,7 @@ requirements:
     - donfig >=0.7,<1.0
     - email_validator >=2,<3
     - httpx >=0.23,<0.28
-    - numpy >=1.23,<2.dev0
+    - numpy >=1.23,<3.0
     - pydantic >=2.3,<2.10
     - python-dateutil >=2.8.0,<3.0.0
     - pyyaml >=6,<7.0
