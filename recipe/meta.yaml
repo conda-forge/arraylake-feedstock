@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "arraylake" %}
-{% set version = "0.14.0" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/arraylake-{{ version }}.tar.gz
-  sha256: dc0da0835703150bbd674e5d9c09aca09e74e79b59489eafaa1c8f23fe2e082d
+  sha256: b19f5ff1043811a46a114065ceb8516b33deac000a0bf97f9bea0e255bcd44b2
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
   entry_points:
     - arraylake = arraylake.cli.main:app
     - al = arraylake.cli.main:app
@@ -46,7 +46,7 @@ requirements:
     - structlog >=24.1,<25.dev0
     - typer >=0.6.1,<1.0
     - uvloop <1.0,>=0.17  # [unix]
-    - zarr >=2.18
+    - zarr >=2.18,!=3.0.3
     - numcodecs >=0.13.1
     - __unix  # [unix]
     - __win   # [win]
@@ -70,6 +70,7 @@ requirements:
     - uvloop >=0.17,<1.0
     - xarray >=v2022.12.0
     - netcdf4 >=1.6.1,<1.7
+    - icechunk >=0.2.0,<0.3.0
 
 test:
   imports:
