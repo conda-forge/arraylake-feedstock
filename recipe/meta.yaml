@@ -46,7 +46,7 @@ requirements:
     - structlog >=24.1,<25.dev0
     - typer >=0.6.1,<1.0
     - uvloop <1.0,>=0.17  # [unix]
-    - zarr >=2.18,!=3.0.3,!3.0.5
+    - zarr >=2.18,!=3.0.3,!=3.0.5
     - numcodecs >=0.13.1
     - __unix  # [unix]
     - __win   # [win]
