@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "arraylake" %}
-{% set version = "0.16.0" %}
+{% set version = "0.17.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/arraylake-{{ version }}.tar.gz
-  sha256: bfdc51224d25f6eb49f389ed84e5d386faf228481f51160d70a96c76897bec9a
+  sha256: 5b90f9bfe974f16c12ab75cd0e3f3273cf13a10590dd6c3d018a6249fe26ffde
 
 build:
   noarch: python
@@ -38,7 +38,7 @@ requirements:
     - email_validator >=2,<3
     - httpx >=0.23,<0.28
     - numpy >=1.23,<3.0
-    - pydantic >=2.3,<2.10
+    - pydantic >=2.9,<2.10
     - python-dateutil >=2.8.0,<3.0.0
     - pyyaml >=6,<7.0
     - rich >=12.6,<14.0
@@ -70,7 +70,7 @@ requirements:
     - uvloop >=0.17,<1.0
     - xarray >=v2024.10.0
     - netcdf4 >=1.6.1,<1.7
-    - icechunk >=0.2.3,<0.3.0
+    - icechunk >=0.2.11,<0.3.0
 
 test:
   imports:
@@ -94,3 +94,4 @@ extra:
     - dcherian
     - monodeldiablo
     - lindseynield
+    - mpiannucci
