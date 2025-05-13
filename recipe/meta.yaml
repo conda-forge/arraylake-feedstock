@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "arraylake" %}
-{% set version = "0.17.0" %}
+{% set version = "0.17.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/arraylake-{{ version }}.tar.gz
-  sha256: 5b90f9bfe974f16c12ab75cd0e3f3273cf13a10590dd6c3d018a6249fe26ffde
+  sha256: 0091f57c8dc5a2640e2d972988e24a02cdca93ddd1084d62d5902ead9637e0cf
 
 build:
   noarch: python
@@ -32,8 +32,8 @@ requirements:
     - aiobotocore >=2.10.0,<3.0
     - aioitertools >=0.11,<1.dev0
     - boto3 >=1.33.2,<2.0
-    - botocore >=1.33.2,<2.0
-    - click >=8.1,<9.dev0
+    - botocore >=1.33.2
+    - click >=8.1.3,<8.2
     - donfig >=0.7,<1.0
     - email_validator >=2,<3
     - httpx >=0.23,<0.28
@@ -44,7 +44,7 @@ requirements:
     - rich >=12.6,<14.0
     - ruamel.yaml >=0.17,<1.0
     - structlog >=24.1,<25.dev0
-    - typer >=0.6.1,<1.0
+    - typer >=0.12.0,<1.0
     - uvloop <1.0,>=0.17  # [unix]
     - zarr >=2.18,!=3.0.3,!=3.0.5
     - numcodecs >=0.13.1
