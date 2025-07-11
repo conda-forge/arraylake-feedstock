@@ -150,6 +150,3 @@ Feedstock Maintainers
 * [@mpiannucci](https://github.com/mpiannucci/)
 * [@rabernat](https://github.com/rabernat/)
 
-
-<!-- dummy commit to enable rerendering -->
-
