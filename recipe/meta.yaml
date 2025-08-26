@@ -28,7 +28,7 @@ requirements:
   run:
     - packaging >=23.0
     - ruamel.yaml >=0.17,<1.0
-    - python >={{ python_min }},<3.13
+    - python >={{ python_min }},<3.14
     - aiobotocore >=2.10.0,<3.0
     - aioitertools >=0.11,<1.dev0
     - boto3 >=1.33.2,<2.0
