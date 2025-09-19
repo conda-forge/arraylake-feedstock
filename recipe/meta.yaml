@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "arraylake" %}
-{% set version = "0.23.1" %}
+{% set version = "0.24.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/arraylake-{{ version }}.tar.gz
-  sha256: 5f15041e0b2997869273913a96576310726c7c18676d014bcb45c3d663630839
+  sha256: 2faf79d457886778f3d16506004ba94fea2665b59e04b91d23ab5733917c9998
 
 build:
   noarch: python
@@ -26,6 +26,8 @@ requirements:
     - hatch-min-requirements
     - pip
   run:
+    - icechunk >=1.1.0,<2.0.0
+    - ruamel_yaml >=0.17,<1.dev0
     - packaging >=23.0
     - ruamel.yaml >=0.17,<1.0
     - python >={{ python_min }},<3.14
@@ -39,14 +41,14 @@ requirements:
     - httpx >=0.23,<0.28
     - numpy >=1.23,<3.0
     - pydantic >=2.9,<2.10
-    - python-dateutil >=2.8.0,<3.0.0
+    - python-dateutil >=2.8,<3.0
     - pyyaml >=6,<7.0
     - rich >=12.6,<14.0
     - ruamel.yaml >=0.17,<1.0
     - structlog >=24.1,<26.0
     - typer >=0.12.0,<1.0
     - uvloop <1.0,>=0.17  # [unix]
-    - zarr >=2.18,!=3.0.3,!=3.0.5,!=3.0.7
+    - zarr >=3.0.0
     - numcodecs >=0.13.1
     - __unix  # [unix]
     - __win   # [win]
