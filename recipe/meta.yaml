@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/arraylake-{{ version }}.tar.gz
-  sha256: 6beee3076f3a366e6bc32af643a67128254b3c31669f5574e350a0dc9fe02cd3
+  sha256: c7866aca8977cfb065ec088bb41328142dfd8a4fff2103d38819e41b03cdc28a
 
 build:
   noarch: python
