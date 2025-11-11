@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1  # Reset to 0 for new version
   entry_points:
     - arraylake = arraylake.cli.main:app
     - al = arraylake.cli.main:app
