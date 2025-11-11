@@ -21,6 +21,9 @@ build:
 requirements:
   host:
     - python {{ python_min }}
+    - hatchling
+    - hatch-vcs
+    - hatch-min-requirements
     - pip
   run:
     - python >={{ python_min }},<3.14
