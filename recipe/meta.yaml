@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "arraylake" %}
-{% set version = "0.27.0" %}
+{% set version = "0.28.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/arraylake-{{ version }}.tar.gz
-  sha256: e4092914be0128a080f84b8c7eebfc654c423e5364b1970827616e9143f1ce31
+  sha256: 8359e744d53fe0fb5d1ba8cae90a57c8f62f093fe2ba1f6de0a42782ff27bb58
 
 build:
   noarch: python
@@ -26,6 +26,7 @@ requirements:
     - hatch-min-requirements
     - pip
   run:
+    - ruamel_yaml >=0.17,<1.0
     - python >={{ python_min }},<3.14
     - click >=8.1.3,<9.0
     - donfig >=0.7,<1.0
