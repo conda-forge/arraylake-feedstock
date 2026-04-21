@@ -146,6 +146,7 @@ Feedstock Maintainers
 * [@TomNicholas](https://github.com/TomNicholas/)
 * [@dcherian](https://github.com/dcherian/)
 * [@jhamman](https://github.com/jhamman/)
+* [@li-em](https://github.com/li-em/)
 * [@lindseynield](https://github.com/lindseynield/)
 * [@monodeldiablo](https://github.com/monodeldiablo/)
 * [@mpiannucci](https://github.com/mpiannucci/)
