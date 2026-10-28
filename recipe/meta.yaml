@@ -1,6 +1,6 @@
 {% set python_min = "3.12" %}
 {% set name = "arraylake" %}
-{% set version = "1.7.0" %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/arraylake-{{ version }}.tar.gz
-  sha256: 5b6cd16bd8f5917333a9baa40f38ede7b86112c1809992db7a451e2d1e7803ba
+  sha256: 33e9dc466278ea8e474c3f2b38e9a9e16570bf37330879a2736443047547dd0e
 
 build:
   noarch: python
